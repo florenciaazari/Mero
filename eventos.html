@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mero Mediterráneo</title>
+  
+  <meta name="descripcion" content="Cocina mediterránea moderna, fresca y sofisticada en Buenos Aires. Reservas, menú, eventos privados." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="home"><img src="img/Logo.svg"></a>
+      <nav class="nav" aria-label="Principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul id="nav-menu" class="nav-menu">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="menu.html">Menú</a>
+          <a href="reservas.html">Reservas</a>
+          <a href="index.html">Home</a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Cinzel", serif;
+      color: #174e79;
+      background: #f9f9f9;
+    }
+
+    .eventos-img-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr 1fr;
+      grid-template-rows: repeat(2, 280px); 
+      gap: 10px;
+      width: 100%;
+      padding: 20px;
+      align-items: stretch;
+    }
+
+    .eventos-img-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 6px;
+    }
+    .img-grande {
+      grid-row: 1 / span 2;
+    }
+    .img-chica1 {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .img-chica2 {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .evento-texto {
+      grid-column: 3;
+      grid-row: 1 / span 2;
+      text-align: center;
+      color: #174e79;
+      padding: 20px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .evento-texto h2 {
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+
+    .evento-texto p {
+      font-size: 15px;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .form-eventos {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    .form-eventos label {
+      margin-bottom: 10px;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .form-eventos input,
+    .form-eventos select,
+    .form-eventos textarea {
+      width: 100%;
+      padding: 6px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+
+    .form-eventos button {
+      background: #174e79;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .form-eventos button:hover {
+      background: #0f3655;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="eventos-img-grid">
+    <div class="img-grande">
+      <img src="img/Mero5A.png" alt="fotogrande">
+    </div>
+    <div class="img-chica1">
+      <img src="img/Mero5B.webp" alt="fotochica1">
+    </div>
+    <div class="img-chica2">
+      <img src="img/Mero5C.png" alt="fotochica2">
+    </div>
+
+    <div class="evento-texto">
+      <h2>Eventos</h2>
+      <p>Ofrecemos eventos privados en un entorno elegante y sofisticado, con la mejor cocina mediterránea.</p>
+      <p>Nuestro equipo se ocupa de cada detalle: ambientación y propuesta gastronómica a medida.</p>
+      <form id="form-eventos" class="form-eventos">
+        <label>Nombre<input name="nombre" required></label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Tipo de evento
+          <select name="tipo">
+            <option>Almuerzo</option>
+            <option>Cóctel</option>
+            <option>Celebración</option>
+          </select>
+        </label>
+        <label>Mensaje
+          <textarea name="mensaje" rows="3" placeholder="Contanos fecha estimada, cantidad de personas y preferencias."></textarea>
+        </label>
+        <button type="submit">Enviar consulta</button>
+      </form>
+    </div>
+  </section>
+
+
+    <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Horarios</strong>
+        <p>Mediodía: domingos de 12:00 a 16:00 horas<br>Noche: lunes a domingos desde las 20:00 horas</p>
+      </div>
+      <div>
+        <strong>Ubicación</strong>
+        <p>República Árabe Siria 3285, Buenos Aires, Argentina 1425</p>
+        <a href="https://maps.app.goo.gl/61VW4VofJyQLaTfL8" target="_blank" rel="noopener">Ver en mapa</a>
+      </div>
+      <div>
+        <strong>Contacto</strong>
+        <p>+54 9 11 2454-0366</p>
+      </div>
+      <div>
+         <a href="https://www.instagram.com/mero.mediterraneo" target="_blank" rel="noopener"><img src="img/Logo blanco.webp" width="40"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/eventos.js"></script>
+</body>
+</html>

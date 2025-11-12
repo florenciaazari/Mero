@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mero Mediterráneo</title>
+  
+  <meta name="descripcion" content="Cocina mediterránea moderna, fresca y sofisticada en Buenos Aires. Reservas, menú, eventos privados." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="home"><img src="img/Logo.svg"></a>
+      <nav class="nav" aria-label="Principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul id="nav-menu" class="nav-menu">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="index.html">Home</a>
+          <a href="reservas.html">Reservas</a>
+          <a href="eventos.html">Eventos</a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<style>
+    .fotosmenu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  line-height: 0;
+}
+.fotosmenu img {
+  width: 100%;
+  height: 30;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+  height: var(--max-hero-height);
+}
+    .cocteles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+.cocteles img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 0;
+}
+.section-title {
+  margin-top: 10; 
+}
+</style>
+
+<main>
+    <!-- ENTRADAS -->
+<div class="fotosmenu">
+    <div><img src="img/Mero3A - Editada.jpg"></div>
+    <div><img src="img/Mero3B - Editada.jpg"></div>
+    <div><img src="img/Mero3C - Editada.png"></div>
+</div>
+    <section class="menu-section container" id="entradas">
+      <h2 class="section-title">ENTRADAS</h2>
+
+      <div class="menu-grid">
+        <div class="menu-col left-col">
+          <article class="menu-item">
+            <h3 class="item-title">Crudo de pesca</h3>
+            <p class="item-desc">Pesca del día curada en sal, acompañada de ajo blanco, pickles de uva, aceite verde y granita de menta</p>
+          </article>
+
+          <article class="menu-item">
+            <h3 class="item-title">Langostinos al ajillo</h3>
+            <p class="item-desc">Langostinos sellados en manteca especiada y ají, hecho en un clásico ajillo con vinagre y perejil</p>
+          </article>
+
+          <article class="menu-item item-with-img">
+            <figure class="round-img">
+              <img src="images/entrada-1.jpg" alt="">
+            </figure>
+            <div class="item-body">
+              <h3 class="item-title">Chipirones rellenos de ragú de su tentáculo</h3>
+              <p class="item-desc">Cabeza de chipirón rellena de ragú de su propio tentáculo en espejo de cremoso de brócoli y ensaladita de tomate seco.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-col right-col">
+          <article class="menu-item">
+            <h3 class="item-title">Ostras frescas</h3>
+            <p class="item-desc">4 unidades de ostras frescas acompañadas de gajos de limón</p>
+          </article>
+
+          <article class="menu-item">
+            <h3 class="item-title">Rabas</h3>
+            <p class="item-desc">Con salsa tártara</p>
+          </article>
+
+          <article class="menu-item">
+            <h3 class="item-title">Clásica ensalada griega</h3>
+            <p class="item-desc">Con queso feta</p>
+          </article>
+
+          <figure class="round-img float-right">
+            <img src="images/entrada-circle-1.jpg" alt="">
+          </figure>
+        </div>
+      </div>
+    </section>>
+         
+
+<!-- PRINCIPALES -->
+  <section class="menu-section container" id="principales">
+      <h2 class="section-title">PRINCIPALES</h2>
+
+      <div class="principales-grid">
+        <div class="principal-item">
+          <figure class="plate">
+            <img src="images/principal-1.jpg" alt="">
+          </figure>
+          <div class="principal-body">
+            <h3 class="item-title">Meloso de arroz negro con parmesano</h3>
+            <p class="item-desc">Arroz nacarado con tinta de sepia y manteca. Con sutil punto de una espuma tibia de parmesano, acompañado de vieiras y calamar.</p>
+
+            <h4 class="subitem-title">Pesca fresca de anzuelo</h4>
+            <p class="item-desc">Acompañado de vegetales de estación en especias</p>
+          </div>
+        </div>
+
+        <div class="principal-item">
+          <div class="principal-body">
+            <h3 class="item-title">Pulpo a la plancha</h3>
+            <p class="item-desc">Pulpo español adobado con tallos de hierbas y ajo confitado, acompañado de parmentier de berenjena al josper y salsa romesco.</p>
+
+            <h4 class="subitem-title">Risotto de calabaza y txistorra</h4>
+            <p class="item-desc">Con galletitas amarettis, cubitos de cabutia y txistorra tostada</p>
+          </div>
+
+          <figure class="plate">
+            <img src="images/principal-2.jpg" alt="">
+          </figure>
+        </div>
+      </div>
+
+      <p class="hero-caption center">Linguini en passata frutti di mare — Pasta de sémola fina y plana en una clásica salsa italiana a base de tomates, ajo, oliva y orégano.</p>
+    </section>
+
+ <!-- SECCIÓN: CÓCTELES -->
+    <section class="cocteles">
+      <div class="container">
+        <h2 class="section-title">CÓCTELES DE AUTOR</h2>
+        <div class="coctel-grid">
+          <div class="coctel-card">
+            <figure class="coctel-art"><img src="img/trago - Editada.png" alt="pez"></figure>
+            <h4 class="coctel-title">Krystallino</h4>
+            <p class="coctel-desc">Gin Malfy rosa, destilado de pesca, pomelo, lemongrass, canela</p>
+          </div>
+
+          <div class="coctel-card">
+            <figure class="coctel-art"><img src="img/trago2 - Editada.png" alt="mero"></figure>
+            <h4 class="coctel-title">Mero</h4>
+            <p class="coctel-desc">Absolut de Flores, maracuyá, lima, coco</p>
+          </div>
+
+          <div class="coctel-card">
+            <figure class="coctel-art"><img src="img/trago3 - Editada.png" alt="Coracola"></figure>
+            <h4 class="coctel-title">Coracola Punch</h4>
+            <p class="coctel-desc">Havana Club 3 años, ananá ahumado, lima, limón, bitter de cacao</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: VINOS -->
+    <section class="vinos container">
+      <section class="vinos container">
+      <h2 class="section-title">VINOS</h2>
+      <div class="vinos-grid">
+        <div class="vino-col">
+          <h4 class="vino-title">Tintos</h4>
+          <p class="vino-item">Gloria Swan, Garnacha. Los Chacayes, Valle de Uco, Mendoza</p>
+          <p class="vino-item">Barda, Pinot Noir. Valle del Río Negro, Patagonia, Argentina</p>
+        </div>
+
+        <div class="vino-col">
+          <h4 class="vino-title">Blancos</h4>
+          <p class="vino-item">Nido del Tigre, Torrontés Centenario. Valle de Calingasta, San Juan</p>
+          <p class="vino-item">Barda, Chardonnay. Valle del Río Negro, Patagonia</p>
+        </div>
+
+        <div class="vino-col">
+          <h4 class="vino-title">Rosados</h4>
+          <p class="vino-item">Libarna, Rose. Altamira, Valle de Uco, Mendoza</p>
+          <p class="vino-item">Solito va, Naranjo. La Consulta, Valle de Uco, Mendoza</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Horarios</strong>
+        <p>Mediodía: domingos de 12:00 a 16:00 horas<br>Noche: lunes a domingos desde las 20:00 horas</p>
+      </div>
+      <div>
+        <strong>Ubicación</strong>
+        <p>República Árabe Siria 3285, Buenos Aires, Argentina 1425</p>
+        <a href="https://maps.app.goo.gl/61VW4VofJyQLaTfL8" target="_blank" rel="noopener">Ver en mapa</a>
+      </div>
+      <div>
+        <strong>Contacto</strong>
+        <p>+54 9 11 2454-0366</p>
+      </div>
+      <div>
+         <a href="https://www.instagram.com/mero.mediterraneo" target="_blank" rel="noopener"><img src="img/Logo blanco.webp" width="40"></a>
+      </div>
+    </div>
+  </footer>
+ </body>
+</html>
