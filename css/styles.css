@@ -1,0 +1,543 @@
+
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+* { margin:0; padding: 0;}
+
+:root{
+--max:1100px; --pad:16px; --bg:#ffffff; --ink:#111; --muted:#666; --line:#eee;
+}
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; font-family: "Crimson Text", serif; line-height:1.6; color:var(--ink); background:var(--bg); }
+img{ max-width:100%; height:auto; display:block; border-radius:12px; }
+
+.container{ max-width:var(--max); margin:0 auto; padding:0 var(--pad); }
+.section{ padding:72px 0; }
+.text p{ max-width:70ch; }
+
+/* Header */
+.site-header{ position:sticky; top:0; background:#174e79; z-index:20; }
+.header-inner{ display:flex; font-family:"Crimson Text", serif; ; align-items:center; justify-content:space-between; height:68px; }
+.brand{ font-weight:800; letter-spacing:.2px; text-decoration:none; color:var(--ink); }
+
+.nav-toggle{ display:none; background:none;}
+.nav-menu{ display:flex; gap:18px; list-style:none; margin:0; padding:0; }
+.nav-menu a{ text-decoration:none; color:var(--ink); padding:8px 22px; border-radius:10px; color: white; font-size: 23px; margin-left: auto; margin-right: 0px; }
+
+/* Index */
+/* Fotos del inicio */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+.flex-container div {
+  width: 33.3%;
+}
+.flex-container img {
+  width: 550px;
+  height: 700px;
+  border: 0;
+  border-radius: 0;
+}
+@media (max-width: 768px) {
+.flex-container {
+flex-direction: column;
+}
+.flex-container div {
+width: 100%;
+}
+.flex-container img {
+width: 100%;
+height: auto;
+}
+}
+
+/* Nosotros */
+.nosotros-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 20px 24px;
+}
+/* foto + foto + texto */
+.nosotros-row1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.1fr;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.nosotros-row1 img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.nosotros-text1 {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+}
+/* texto + foto chef */
+.nosotros-row2 {
+  background: #f4f2ee;
+  border-radius: 12px;
+  padding: 18px 32px 24px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 24px;
+  align-items: flex-start;
+  margin: 20px auto 10px;
+}
+.nosotros-text2 {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+  margin-top: 22px;
+}
+.nosotros-row2 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top; 
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .nosotros-row1,
+  .nosotros-row2 {
+    grid-template-columns: 1fr;
+  }
+  .nosotros-text1,
+  .nosotros-text2 {
+    text-align: center;
+  }
+}
+
+
+/* Menú */
+.menu {
+  padding: 40px 0;
+}
+.section-title {
+  font-family: inherit;
+  font-size: 28px;
+  color: #174e79;
+  margin: 30px 0 20px 0;
+  text-align: center;
+}
+/* Fotos del Menú */
+.fotosmenu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  line-height: 0;
+}
+.fotosmenu img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0px;
+}
+@media (max-width: 768px) {
+.fotosmenu img {
+height: 120px;
+}
+}
+/* Entradas */
+.entradas-section {
+  max-width: 1050px;
+}
+.entradas-list .list-group-item {
+  background: transparent;
+  border-color: #eee;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 10px;
+}
+.plato-nombre {
+  font-size: 20px;
+  font-weight: 600;
+  color: #174e79;
+  display: block;
+  margin-bottom: 4px;
+}
+.plato-desc {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.4;
+  display: block;
+}
+/* Principales */
+.principales-section {
+  max-width: 1050px;
+  margin: 40px auto;
+  margin-top: 0;
+}
+/* Fila principal: imagen + texto */
+.principal-row {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+/* Segunda fila invertida */
+.principal-row-reverse {
+  flex-direction: row-reverse;
+  margin-top: -20px;
+}
+/* Imagen del plato */
+.principal-img img {
+  width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+/* Texto del plato */
+.principal-title,
+.subitem-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #174e79;
+  display: block;
+  margin-bottom: 4px;
+  font-family: inherit;
+}
+.principal-desc,
+.subitem-desc {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.4;
+  display: block;
+}
+/* Segundo plato dentro del mismo bloque */
+.principal-title,
+.subitem-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #174e79;
+  display: block;
+  margin-bottom: 4px;
+  font-family: inherit;
+}
+.principal-desc,
+.subitem-desc {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.4;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .principal-row,
+  .principal-row-reverse {
+    flex-direction: column;
+  }
+}
+/* Cócteles */
+.cocteles {
+  background: #f6f3f1;
+  padding: 8px 0 6px;
+}
+.coctel-img {
+  max-width: 180px;
+  height: auto;
+}
+.coctel-title {
+  font-family: inherit;
+  color: #174e79;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+.coctel-desc {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+}
+.section-title {
+  margin-bottom: 20px;   
+}
+/* Mobile */
+@media (max-width: 768px) {
+  .coctel-img {
+    max-width: 140px;
+    margin-bottom: 8px;
+  }
+}
+/* Vino */
+.vinos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 30px 0;
+}
+.vino-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #174e79;
+  display: block;
+  margin-bottom: 4px;
+}
+.vino-item {
+  font-size: 15px;
+  color: #444;
+  margin: 3px 0;
+}
+@media (max-width: 900px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+  .principales-grid {
+    grid-template-columns: 1fr;
+  }
+  .principal-item {
+    grid-template-columns: 1fr;
+  }
+  .fotosmenu img {
+    height: 220px;
+  }
+  .vinos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .vinos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Reservas */
+/* Fondo de la sección con imagen */
+.reservas {
+  background-image: url("../img/Mero4A.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 60px 16px;
+  min-height: calc(100vh - 68px - 110px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Recuadro beige */
+.reserva-box {
+  background-color: #f4f2ee;
+  max-width: 680px;        
+  width: 90%;
+  padding: 32px 36px;   
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  text-align: center;     
+}
+/* Título */
+.reserva-box h2 {
+  font-family: inherit;
+  color: #174e79;
+  margin-bottom: 24px;
+}
+/* Formulario reservas*/
+.reservas-grid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  gap: 16px;
+  width: 100%;
+}
+.grid .wide {
+  grid-column: 1 / -1;    
+}
+/* Labels e inputs centrados */
+.grid label {
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font: inherit;
+}
+/* Botón */
+.reserva-box button {
+  background-color: #174e79;
+  color: #fff;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.reserva-box button:hover {
+  background-color: #0f3758;
+}
+
+
+/*Eventos*/
+.eventos-img-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr 1fr;
+  grid-template-rows: repeat(2, 280px);
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  align-items: stretch;
+}
+.eventos-img-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+.img-grande {
+  grid-row: 1 / span 2;
+}
+.img-chica1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.img-chica2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.evento-texto {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  text-align: center;
+  color: #174e79;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.evento-texto h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+.evento-texto p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+/* Formulario eventos */
+.form-eventos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.form-eventos label {
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+.form-eventos input,
+.form-eventos select,
+.form-eventos textarea {
+  width: 100%;
+  padding: 6px;
+  margin-top: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  resize: none; 
+}
+.form-eventos button {
+  background: #174e79;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.form-eventos button:hover {
+  background: #0f3655;
+}
+@media (max-width: 900px) {
+.eventos-img-grid {
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+padding: 16px;
+}
+.img-grande,
+.img-chica1,
+.img-chica2 {
+grid-column: auto;
+grid-row: auto;
+}
+.evento-texto {
+grid-column: auto;
+grid-row: auto;
+margin-top: 10px;
+}
+}
+
+/* Botones */
+.btn{ display:inline-block; padding:12px 16px; border-radius:12px; border:none; background:var(--ink); color:#fff; text-decoration:none; cursor:pointer; font-weight:600; }
+.btn:hover{ opacity:.9; }
+.btn-outline{ display:inline-block; padding:12px 16px; border-radius:12px; border:1px solid var(--ink); color:var(--ink); text-decoration:none; }
+
+
+/* Footer */
+.site-footer {
+  background: #174e79;
+  color: #fff;
+  text-align: center; 
+  padding: 40px 0;
+  font-size: 17px;
+}
+.footer-inner {
+  display: flex;
+  justify-content: center; 
+  gap: 60px; 
+  flex-wrap: wrap; 
+}
+.footer-inner div {
+  max-width: 400px;
+}
+.site-footer a{
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 980px){
+.menu-grid{ grid-template-columns:1fr; }
+.menu-columns{ grid-template-columns:1fr; }
+.reservas-grid{ grid-template-columns:1fr; }
+}
+@media (max-width: 780px){
+.nav-toggle{ display:inline-block; }
+.nav-menu{ display:none; flex-direction:column; padding:16px; }
+.nav-menu.open{ display:flex; }
+.grid{ grid-template-columns:1fr; }
+}
+
+a, button, .card, img, .list-group-item {
+  transition: all 0.25s ease;
+}

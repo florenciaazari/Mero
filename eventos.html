@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mero Mediterráneo</title>
+  
+  <meta name="descripcion" content="Cocina mediterránea moderna, fresca y sofisticada en Buenos Aires. Reservas, menú, eventos privados." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <head>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html"><img src="img/Logo.svg"></a>
+      <nav class="nav" aria-label="Principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul id="nav-menu" class="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="menu.html">Menú</a>
+          <a href="reservas.html">Reservas</a>
+          <a href="">Eventos</a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</head>
+
+<body>
+  <section class="eventos-img-grid">
+    <div class="img-grande">
+      <img src="img/Mero5A.png" alt="fotogrande">
+    </div>
+    <div class="img-chica1">
+      <img src="img/Mero5B.webp" alt="fotochica1">
+    </div>
+    <div class="img-chica2">
+      <img src="img/Mero5C.png" alt="fotochica2">
+    </div>
+
+    <div class="evento-texto">
+      <h2>Eventos</h2>
+      <p>Ofrecemos eventos privados en un entorno elegante y sofisticado, con la mejor cocina mediterránea.</p>
+      <p>Nuestro equipo se ocupa de cada detalle: ambientación y propuesta gastronómica a medida.</p>
+      <form id="form-eventos" class="form-eventos">
+        <label>Nombre<input name="nombre" required></label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Tipo de evento
+          <select name="tipo">
+            <option>Almuerzo</option>
+            <option>Cóctel</option>
+            <option>Celebración</option>
+          </select>
+        </label>
+        <label>Mensaje
+          <textarea name="mensaje" rows="3" placeholder="Contanos fecha estimada, cantidad de personas y preferencias."></textarea>
+        </label>
+        <button type="submit">Enviar consulta</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Horarios</strong>
+        <p>Mediodía: domingos de 12:00 a 16:00 horas<br>Noche: lunes a domingos desde las 20:00 horas</p>
+      </div>
+      <div>
+        <strong>Ubicación</strong>
+        <p>República Árabe Siria 3285, Buenos Aires, Argentina 1425</p>
+        <a href="https://maps.app.goo.gl/61VW4VofJyQLaTfL8" target="_blank" rel="noopener">Ver en mapa</a>
+      </div>
+      <div>
+        <strong>Contacto</strong>
+        <p>  <a href="tel:1122222222">+54 9 11 2454-0366</a></p>
+      </div>
+      <div>
+         <a href="https://www.instagram.com/mero.mediterraneo" target="_blank" rel="noopener"><img src="img/Logo blanco.webp" width="40"></a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="copy">
+      &copy; 2025 Mero | Derechos Reservados
+    </div>
+      <div class="credit">
+        <p> Desarrollado por <a href="#"> Florencia Azari - Universidad de Palermo </a> </p>
+    </div>
+  </footer>
+
+  <script src="js/eventos.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mero Mediterráneo</title>
+  
+  <meta name="descripcion" content="Cocina mediterránea moderna, fresca y sofisticada en Buenos Aires. Reservas, menú, eventos privados." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html"><img src="img/Logo.svg"></a>
+      <nav class="nav" aria-label="Principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul id="nav-menu" class="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="menu.html">Menú</a>
+          <a href="">Reservas</a>
+          <a href="eventos.html">Eventos</a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<main>
+<section class="reservas">
+    <section class="reserva-box">
+      <div class="container">
+        <h2>Reservas</h2>
+        <div class="reservas-grid">
+          <form class="grid" id="form-reservas">
+            <label>Fecha<input type="date" name="fecha" required></label>
+            <label>Hora
+              <select name="hora" required>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+                <option value="22:00">22:00</option>
+              </select>
+            </label>
+            <label>Comensales<input type="number" name="comensales" min="1" value="2" required></label>
+            <label>Salón
+              <select name="salon">
+                <option>Salón</option>
+                <option>Vereda</option>
+              </select>
+            </label>
+            <label class="wide">Email de confirmación<input type="email" name="email" placeholder="tu@mail.com" required></label>
+            <button class="btn" type="submit">Confirmar</button>
+          </form>
+</section>
+</section>
+</main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Horarios</strong>
+        <p>Mediodía: domingos de 12:00 a 16:00 horas<br>Noche: lunes a domingos desde las 20:00 horas</p>
+      </div>
+      <div>
+        <strong>Ubicación</strong>
+        <p>República Árabe Siria 3285, Buenos Aires, Argentina 1425</p>
+        <a href="https://maps.app.goo.gl/61VW4VofJyQLaTfL8" target="_blank" rel="noopener">Ver en mapa</a>
+      </div>
+      <div>
+        <strong>Contacto</strong>
+        <p>  <a href="tel:1122222222">+54 9 11 2454-0366</a></p>
+      </div>
+      <div>
+         <a href="https://www.instagram.com/mero.mediterraneo" target="_blank" rel="noopener"><img src="img/Logo blanco.webp" width="40"></a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="copy">
+      &copy; 2025 Mero | Derechos Reservados
+    </div>
+      <div class="credit">
+        <p> Desarrollado por <a href="#"> Florencia Azari - Universidad de Palermo </a> </p>
+    </div>
+  </footer>
+
+  <script src="js/reservas.js"></script>
+  </body>
+</html>
